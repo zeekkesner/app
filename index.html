@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>D3Merit</title>
+        <style>
+            p {
+                font-family: sans-serif;
+            }
+            
+            img {
+                max-width: 150px;
+            }
+            
+            h1,h4 {
+                font-family: sans-serif;
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding: 3px;
+            }
+            
+            h1:hover,h4:hover {
+                background-color: rgb(248, 255, 199);
+            }
+            
+        </style>
+</head>
+<body style="background-color:coral;">
+<script>
+var f = 0;
+var buttonNames = ["New Button","New Button","New Button","New Button","New Button","New Button","New Button","New Button","New Button","New Button"];
+localStorage.setItem("f", f);
+localStorage.setItem("buttonNames", buttonNames);
+var r = Array.isArray(buttonNames);
+document.write (r);
+</script>
+<h1>D3Merit</h1>
+<h4>The best way to calculate allowance or rewards for kids based on beavior!</h4>
+<p>You can set an amount of money or items at the beginning of each week, which you can slowly add to or take away from as the week progresses. You can make set prices or vary them based on the specific situation.</p>
+<a href="start.html">Start!</a>
+
+</body>
+</html>

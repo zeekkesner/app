@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button List</title>
+<style>
+            p {
+                font-family: sans-serif;
+            }
+            
+            img {
+                max-width: 150px;
+            }
+            
+            h1,h4 {
+                font-family: sans-serif;
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding: 3px;
+            }
+            
+            h1:hover,h4:hover {
+                background-color: rgb(248, 255, 199);
+            }
+            
+        </style>
+</head>
+<body style="background-color:coral;">        
+<script>
+var f = localStorage.getItem("f");
+var amount = localStorage.getItem("amount");
+var type = localStorage.getItem("type");
+var buttonNames = localStorage.getItem("buttonNames");
+var addSub = localStorage.getItem("addSub");
+var amountAddSub = localStorage.getItem("amountAddSub");
+</script>
+<h1><script>document.write(amount + " " + type);</script></h1>
+<h4>Make Buttons!</h4>
+<p>Here, you will make <b>buttons</b> that you can click to add or subtract items instantly</p> <br>
+<h4>You are only allowed to make ten buttons.</h4>
+<h4><script>document.write(f);</script>/10</h4>
+<br>
+<button onclick="button0(amount, amountAddSub, addSub)"><script>document.write (buttonNames[0]);</script></button>
+<br>
+<button onclick="button1(amount, amountAddSub, addSub)"><script>document.write (buttonNames[1]);</script></button>
+<br>
+<button onclick="button2(amount, amountAddSub, addSub)"><script>document.write (buttonNames[2]);</script></button>
+<br>
+<button onclick="button3(amount, amountAddSub, addSub)"><script>document.write (buttonNames[3]);</script></button>
+<br>
+<button onclick="button4(amount, amountAddSub, addSub)"><script>document.write (buttonNames[4]);</script></button>
+<br>
+<button onclick="button5(amount, amountAddSub, addSub)"><script>document.write (buttonNames[5]);</script></button>
+<br>
+<button onclick="button6(amount, amountAddSub, addSub)"><script>document.write (buttonNames[6]);</script></button>
+<br>
+<button onclick="button7(amount, amountAddSub, addSub)"><script>document.write (buttonNames[7]);</script></button>
+<br>
+<button onclick="button8(amount, amountAddSub, addSub)"><script>document.write (buttonNames[8]);</script></button>
+<br>
+<button onclick="button9(amount, amountAddSub, addSub)"><script>document.write (buttonNames[9]);</script></button>
+<h4></h4>
+
+
+
+
+
+<br><br>
+<a href="editbutton.html">Edit Button</a>
+<h1>Change Log</h1>
+<script>
+var f = localStorage.getItem("f");
+var amount = localStorage.getItem("amount");
+var type = localStorage.getItem("type");
+var buttonNames = localStorage.getItem("buttonNames");
+var addSub = localStorage.getItem("addSub");
+var amountAddSub = localStorage.getItem("amountAddSub");
+function button0(amount, amountAddSub, addSub) {
+if (addSub[0] = D) {
+amount = amount - amountAddSub[0];
+document.write(amount);
+} else if (addSub[0] = R) {
+amount = amount + amountAddSub[0];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[0]);
+}
+}
+function button1(amount, amountAddSub, addSub) {
+if (addSub[1] = D) {
+amount = amount - amountAddSub[1];
+document.write(amount);
+} else if (addSub[1] = R) {
+amount = amount + amountAddSub[1];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[1]);
+}
+}
+function button2(amount, amountAddSub, addSub) {
+if (addSub[2] = D) {
+amount = amount - amountAddSub[2];
+document.write(amount);
+} else if (addSub[2] = R) {
+amount = amount + amountAddSub[2];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[2]);
+}
+}
+function button3(amount, amountAddSub, addSub) {
+if (addSub[3] = D) {
+amount = amount - amountAddSub[3];
+document.write(amount);
+} else if (addSub[3] = R) {
+amount = amount + amountAddSub[3];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[3]);
+}
+}
+function button4(amount, amountAddSub, addSub) {
+if (addSub[4] = D) {
+amount = amount - amountAddSub[4];
+document.write(amount);
+} else if (addSub[4] = R) {
+amount = amount + amountAddSub[4];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[4]);
+}
+}
+function button5(amount, amountAddSub, addSub) {
+if (addSub[5] = D) {
+amount = amount - amountAddSub[5];
+document.write(amount);
+} else if (addSub[5] = R) {
+amount = amount + amountAddSub[5];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[5]);
+}
+}
+function button6(amount, amountAddSub, addSub) {
+if (addSub[6] = D) {
+amount = amount - amountAddSub[6];
+document.write(amount);
+} else if (addSub[6] = R) {
+amount = amount + amountAddSub[6];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[6]);
+}
+}
+function button7(amount, amountAddSub, addSub) {
+if (addSub[7] = D) {
+amount = amount - amountAddSub[7];
+document.write(amount);
+} else if (addSub[7] = R) {
+amount = amount + amountAddSub[7];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[7]);
+}
+}
+function button8(amount, amountAddSub, addSub) {
+if (addSub[8] = D) {
+amount = amount - amountAddSub[8];
+document.write(amount);
+} else if (addSub[8] = R) {
+amount = amount + amountAddSub[8];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[8]);
+}
+}
+function button9(amount, amountAddSub, addSub) {
+if (addSub[9] = D) {
+amount = amount - amountAddSub[9];
+document.write(amount);
+} else if (addSub[9] = R) {
+amount = amount + amountAddSub[9];
+document.write(amount);
+} else {
+document.write("Error: Neither Reward nor Demerit detected to be specified for " + buttonNames[9]);
+}
+}
+localStorage.setItem("f", f);
+localStorage.setItem("amount", amount);
+localStorage.setItem("type", type);
+localStorage.setItem("buttonNames", buttonNames);
+localStorage.setItem("addSub", addSub);
+localStorage.setItem("amountAddSub", amountAddSub);
+
+
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var buttonNames = localStorage.getItem("buttonNames");
+var f = localStorage.getItem("f");
+</script>
+<title>New Button</title>
+<style>
+            p {
+                font-family: sans-serif;
+            }
+            
+            img {
+                max-width: 150px;
+            }
+            
+            h1,h4 {
+                font-family: sans-serif;
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding: 3px;
+            }
+            
+            h1:hover,h4:hover {
+                background-color: rgb(248, 255, 199);
+            }
+            
+        </style>
+</head>
+<body style="background-color:coral;">
+<h1><script>document.write(buttonNames[0]);</script></h1>
+<h4>WARNING! Once you make a button, you will not be able to delete it.</>
+<h4>Name Your Button</h4>
+<input id="buttonName"><br><br>
+<h4>Type an R for a reward (an addition to the amount when this is clicked) or D for a Demerit (for a subtraction from the amount when this button is clicked)</h4>
+<input id="addSub"><br><br>
+<h4>Amount to add/subtract</h4>
+<input id="amountAddSub"><br><br>
+<h4>Only click Save once.</h4>
+<button onclick="nextStep()">Save</button>
+<h4>Save Before Continuing</h4>
+<a href="ButtonList.html">Back to Button list</a>
+<script>
+function nextStep() {
+
+buttonNames[f] = document.getElementById("buttonNames").value;
+addSub[f] = document.getElementById("addSub").value;
+amountAddSub[f] = document.getElementById("amountAddSub").value;
+f ++;
+localStorage.setItem("buttonNames", buttonNames);
+localStorage.setItem("addSub", addSub);
+localStorage.setItem("amountAddSub", amountAddSub);
+localStorage.setItem("f", f);
+}
+</script>
+</body>
+</html>

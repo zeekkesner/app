@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Button</title>
+<style>
+            p {
+                font-family: sans-serif;
+            }
+            
+            img {
+                max-width: 150px;
+            }
+            
+            h1,h4 {
+                font-family: sans-serif;
+                border-bottom: 1px solid rgb(230, 230, 230);
+                padding: 3px;
+            }
+            
+            h1:hover,h4:hover {
+                background-color: rgb(248, 255, 199);
+            }
+            
+        </style>
+</head>
+<body style="background-color:coral;">
+<script>
+var buttonNames = localStorage.getItem("buttonNames"); 
+var i;
+</script>
+<h1>Edit Button</h1>
+<h4>Enter the number of the button</h4>
+<p>
+<script>
+document.write (0 + ": " + buttonNames[0]);
+</script>
+</p>
+<p>
+<script>
+document.write (1 + ": " + buttonNames[1]);
+</script>
+</p>
+<p>
+<script>
+document.write (2 + ": " + buttonNames[2]);
+</script>
+</p>
+<p>
+<script>
+document.write (3 + ": " + buttonNames[3]);
+</script>
+</p>
+<p>
+<script>
+document.write (4 + ": " + buttonNames[4]);
+</script>
+</p>
+<p>
+<script>
+document.write (5 + ": " + buttonNames[5]);
+</script>
+</p>
+<p>
+<script>
+document.write (6 + ": " + buttonNames[6]);
+</script>
+</p>
+<p>
+<script>
+document.write (7 + ": " + buttonNames[7]);
+</script>
+</p>
+<p>
+<script>
+document.write (8 + ": " + buttonNames[8]);
+</script>
+</p>
+<p>
+<script>
+document.write (9 + ": " + buttonNames[9]);
+</script>
+</p>
+
+<br>
+<input id= "buttonNumber"><br><br>
+<h4>Name Your Button</h4>
+<input id="buttonName"><br><br>
+<h4>Type an R for a reward (an addition to the amount when this is clicked) or D for a Demerit (for a subtraction from the amount when this button is clicked)</h4>
+<input id="addSub"><br><br>
+<h4>Amount to add/subtract</h4>
+<input id="amountAddSub"><br><br>
+<h4>Only click Save once.</h4>
+<button onclick="nextStep()">Save</button>
+<h4>Save Before Continuing</h4>
+<a href="ButtonList.html">Back to Button list</a>
+<script>
+function nextStep() {
+var f = localStorage.getItem("f");
+var amount = localStorage.getItem("amount");
+var type = localStorage.getItem("type");
+var buttonNames = localStorage.getItem("buttonNames");
+var addSub = localStorage.getItem("addSub");
+var amountAddSub = localStorage.getItem("amountAddSub");
+f = document.getElementById("buttonNumber").value;
+buttonNames[f] = document.getElementById("buttonNames").value;
+addSub[f] = document.getElementById("addSub").value;
+amountAddSub[f] = document.getElementById("amountAddSub").value;
+
+localStorage.setItem("f", f);
+localStorage.setItem("amount", amount);
+localStorage.setItem("type", type);
+localStorage.setItem("buttonNames", buttonNames);
+localStorage.setItem("addSub", addSub);
+localStorage.setItem("amountAddSub", amountAddSub);
+}
+</script>
+</body>
+</html>
